@@ -158,40 +158,40 @@ window.onload = function () {
 
   // ** Service item => Hover-Lightbox**
 
-  serviceItems.forEach((item) => {
-    const inner = item.querySelector(".service-item-inner");
-    const details = item.querySelector(".service-item-details");
+  // serviceItems.forEach((item) => {
+  //   const inner = item.querySelector(".service-item-inner");
+  //   const details = item.querySelector(".service-item-details");
 
-    let isHovered = false;
+  //   let isHovered = false;
 
-    item.addEventListener("mouseenter", () => {
-      isHovered = true;
-      inner.style.transform = "scale(2)";
-      inner.style.zIndex = "10";
-      details.style.visibility = "visible";
-      setTimeout(() => {
-        if (isHovered) details.style.opacity = "1";
-      }, 100);
-    });
+  //   item.addEventListener("mouseenter", () => {
+  //     isHovered = true;
+  //     inner.style.transform = "scale(2)";
+  //     inner.style.zIndex = "10";
+  //     details.style.visibility = "visible";
+  //     setTimeout(() => {
+  //       if (isHovered) details.style.opacity = "1";
+  //     }, 100);
+  //   });
 
-    item.addEventListener("mouseleave", () => {
-      isHovered = false;
+  //   item.addEventListener("mouseleave", () => {
+  //     isHovered = false;
 
-      setTimeout(() => {
-        if (!isHovered) {
-          details.style.opacity = "0";
-          setTimeout(() => {
-            if (!isHovered) {
-              inner.style.transform = "scale(1)";
-              details.style.visibility = "hidden";
-              details.style.opacity = "0";
-              setTimeout(() => {
-                inner.style.zIndex = "5";
-              }, 100);
-            }
-          }, 10);
-        }
-      }, 10);
-    });
-  });
+  //     setTimeout(() => {
+  //       if (!isHovered) {
+  //         details.style.opacity = "0";
+  //         setTimeout(() => {
+  //           if (!isHovered) {
+  //             inner.style.transform = "scale(1)";
+  //             details.style.visibility = "hidden";
+  //             details.style.opacity = "0";
+  //             setTimeout(() => {
+  //               inner.style.zIndex = "5";
+  //             }, 100);
+  //           }
+  //         }, 10);
+  //       }
+  //     }, 10);
+  //   });
+  // });
 };
