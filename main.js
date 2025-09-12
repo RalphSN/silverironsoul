@@ -12,7 +12,7 @@ window.onload = function () {
   const navbarLinks = document.querySelectorAll(".navbar-links a");
 
   // ** Service item => Hover-Lightbox
-  const serviceItems = document.querySelectorAll(".service-item");
+  // const serviceItems = document.querySelectorAll(".service-item");
 
   // ** 計算滾軸寬度**
   const scrollbarWidth =
@@ -123,7 +123,9 @@ window.onload = function () {
   const worksSlider = document.querySelector(".works-slider");
   if (worksSlider) {
     new Swiper(".works-slider", {
-      loop: true,
+      loop: false,
+      loopAdditionalSlides: 1,
+      loopedSlides: 3,
       spaceBetween: 20,
       slidesPerView: 1,
       navigation: {
