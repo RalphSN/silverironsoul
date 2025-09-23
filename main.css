@@ -266,7 +266,7 @@ button {
 .navbar-auth-slide .language-dropdown.open .dropdown-menu {
   display: block;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .navbar {
     padding: 0.5rem 1rem;
   }
@@ -312,6 +312,7 @@ button {
   }
   .navbar .menu-overlay.open {
     opacity: 1;
+    display: block;
   }
   .navbar .navbar-auth-slide {
     position: fixed;
