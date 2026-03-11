@@ -402,6 +402,7 @@ button {
   display: block;
   width: 100%;
   font-size: 20px;
+  white-space: normal;
 }
 
 @media (max-width: 1024px) {
@@ -1109,3 +1110,19 @@ button {
   transform: scale(1);
   visibility: visible !important;
 }
+
+/* 寫一個會發光的button */
+/* .glow-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #3864a0;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(56, 100, 160, 0.7);
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+} */
